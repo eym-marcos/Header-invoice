@@ -1,0 +1,38 @@
+<div class="container px-0 ">
+                <div class="row w-100 m-auto  px-0">
+                    <div class="col-3 px-0 ">
+                        <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" class="float-left w-100"  alt="Logo"/>
+                    </div>
+                    <div class="col-6 pr-0 ">
+                        <div class="float-left company_address"
+                             style="font-size: 14px; text-align: left; padding-top: 5px;">
+                            <div>
+                                <strong t-field="company.partner_id.name"/>
+                            </div>
+                            <span style="font-size: 12px;" t-field="company.partner_id"
+                                  t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;], &quot;no_marker&quot;: true}"/>
+                        </div>
+                    </div>
+                    <div class="col-3 px-0 ">
+                        <table style="float:left; border-radius: 15px !important; width: 230px;"
+                               class="text-center border rounded">
+                            <tr>
+                                <td style="padding-top: 8px;">
+                                    <span t-field="o.company_id.vat"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <span t-field="o.company_id.vat"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-bottom: 8px; ">
+                                    <span t-field="o.name"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
